@@ -13,7 +13,7 @@ import com.capg.insurance.R
 import com.capg.insurance.data.model.ProductModel
 import com.google.android.material.card.MaterialCardView
 
-class GridViewAdapter(recyclerDataArrayList: ArrayList<ProductModel>, mcontext: Context, tag : String) :
+/*class GridViewAdapter(recyclerDataArrayList: ArrayList<ProductModel>, mcontext: Context, tag : String) :
     RecyclerView.Adapter<GridViewAdapter.RecyclerViewHolder>(){
 
     private val insuranceListModel: ArrayList<ProductModel> = recyclerDataArrayList
@@ -85,4 +85,4 @@ class GridViewAdapter(recyclerDataArrayList: ArrayList<ProductModel>, mcontext: 
 
         }
     }
-}
+}*/
