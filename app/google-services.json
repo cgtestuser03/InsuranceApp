@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "643411479452",
+    "firebase_url": "https://fir-insurance-9ed65-default-rtdb.firebaseio.com",
+    "project_id": "fir-insurance-9ed65",
+    "storage_bucket": "fir-insurance-9ed65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643411479452:android:d1ec8f2319d1ecaab75659",
+        "android_client_info": {
+          "package_name": "com.capg.insurance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643411479452-4bo0rmtardvcc63c07c0n4q7soi8qg2t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capg.insurance",
+            "certificate_hash": "18d68ad18fdf4bcfc411080e785afdae7f4755bb"
+          }
+        },
+        {
+          "client_id": "643411479452-l2igrtb1camvd47hn02mp9a3m6ocg738.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA25g2RUgAB-nY4FxbwVELKcDvcW4jHP8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643411479452-l2igrtb1camvd47hn02mp9a3m6ocg738.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
