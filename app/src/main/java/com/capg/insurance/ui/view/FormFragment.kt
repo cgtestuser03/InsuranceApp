@@ -33,8 +33,8 @@ open class FormFragment : Fragment() , View.OnClickListener, OnDateSetListener{
     // onDestroyView.
     private val binding get() = _binding!!
 
-    private val defaultButtonTintColor = "#1B1717"
-    private val onFormValidButtonTintColor = "#4F774F"
+    private val defaultButtonTintColor = "#DFDCDA"
+    private val onFormValidButtonTintColor = "#EC9A59"
     private var errorMessage: String? = null
     private var isFormValid = false
 

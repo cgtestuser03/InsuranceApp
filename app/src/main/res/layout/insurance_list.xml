@@ -45,7 +45,7 @@
                 android:layout_toRightOf="@id/insuranceImage"
                 android:gravity="left"
                 android:text="Car Insurance"
-                android:textColor="#FFA500"
+                android:textColor="#FF6700"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 tools:ignore="NotSibling" />

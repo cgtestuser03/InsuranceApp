@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="10dp"
-    android:background="#aaaaaa"
+    android:background="#F0F0F0"
     tools:context=".ui.view.QuoteFragment">
 
     <TextView
@@ -19,7 +19,7 @@
         android:layout_marginRight="16dp"
         android:gravity="left"
         android:text="Our Products"
-        android:textColor="@color/white"
+        android:textColor="#E56717"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,14 +28,15 @@
 
     <TextView
         android:id="@+id/tv_category"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="6dp"
+        android:layout_marginStart="16dp"
+        android:textSize="14sp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="80dp"
         android:text="@string/c_text"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.061"

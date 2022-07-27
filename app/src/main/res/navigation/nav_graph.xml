@@ -22,7 +22,7 @@
     <fragment
         android:id="@+id/signInFragment"
         android:name="com.capg.insurance.ui.authentication.SignInFragment"
-        android:label="">
+        android:label="HSBC Insurance">
         <action
             android:id="@+id/action_signInFragment_to_signUpFragment"
             app:destination="@id/signUpFragment"

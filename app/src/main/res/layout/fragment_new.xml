@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0F0F0"
     tools:context=".ui.view.FormFragment">
 
     <LinearLayout
@@ -34,6 +35,8 @@
                 android:layout_weight="1"
                 android:autofillHints=""
                 android:ems="10"
+                android:textStyle="bold"
+                android:textColor="#E56717"
                 android:text="@string/h_insurance"
                 android:textSize="14sp" />
 
@@ -81,6 +84,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:paddingTop="@dimen/option_margin">
 
                 <EditText
@@ -91,6 +96,7 @@
                     android:layout_weight="1"
                     android:autofillHints=""
                     android:ems="10"
+                    android:background="@android:color/transparent"
                     android:hint="@string/h_name"
                     android:inputType="textNoSuggestions"
                     android:tag="name" />
@@ -99,6 +105,8 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:layout_weight="1">
 
                 <EditText
@@ -107,9 +115,11 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/text_margin"
                     android:layout_weight="1"
+                    android:backgroundTint="#EC9A59"
                     android:autofillHints=""
                     android:cursorVisible="false"
                     android:ems="10"
+                    android:background="@android:color/transparent"
                     android:focusable="false"
                     android:hint="@string/h_dob"
                     android:inputType="date"
@@ -120,6 +130,8 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:layout_weight="1">
 
                 <EditText
@@ -129,6 +141,8 @@
                     android:layout_margin="@dimen/text_margin"
                     android:autofillHints=""
                     android:ems="10"
+                    android:maxLength="10"
+                    android:background="@android:color/transparent"
                     android:hint="@string/h_phone"
                     android:inputType="phone"
                     android:tag="phone"
@@ -164,6 +178,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/text_margin"
                     android:layout_weight="1"
+                    android:buttonTint="#FF6700"
                     android:tag="sex_male"
                     android:text="@string/t_male" />
 
@@ -173,6 +188,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:tag="sex_female"
+                    android:buttonTint="#FF6700"
                     android:text="@string/t_female" />
 
             </RadioGroup>
@@ -207,6 +223,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/text_margin"
                     android:tag="work"
+                    android:buttonTint="#FF6700"
                     android:text="@string/c_work" />
 
                 <CheckBox
@@ -215,6 +232,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/text_margin"
                     android:tag="smoke"
+                    android:buttonTint="#FF6700"
                     android:text="@string/c_smoke" />
 
                 <CheckBox
@@ -223,6 +241,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/text_margin"
                     android:tag="workout"
+                    android:buttonTint="#FF6700"
                     android:text="@string/c_gym" />
 
             </LinearLayout>
@@ -262,9 +281,11 @@
                 android:layout_marginHorizontal="24dp"
                 android:layout_marginTop="12dp"
                 android:insetTop="0dp"
+                android:backgroundTint="#E56717"
                 android:insetBottom="0dp"
                 android:letterSpacing="0"
                 android:text="View free quotes"
+                android:textSize="14dp"
                 android:textAllCaps="false"
                 android:theme="@style/Theme.MaterialComponents.Light"
                 app:backgroundTint="#171B17"
