@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/layoutSignInParent"
     tools:context="ui.authentication.SignInFragment">
 
     <TextView
@@ -125,7 +126,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="180dp"
         android:text="Do not have an account?"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -138,7 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="140dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="180dp"
         android:text="Sign up here"
         android:textColor="#00ACC1"
         android:textSize="16sp"
