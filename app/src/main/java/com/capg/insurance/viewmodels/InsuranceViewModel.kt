@@ -8,7 +8,7 @@ import com.capg.insurance.data.model.QuotesModel
 import com.capg.insurance.data.repository.InsuranceRepository
 import com.capg.insurance.interfaces.NetworkResponseCallback
 
-class InsuranceViewModel(private val app: Application) : AndroidViewModel(app) {
+open class InsuranceViewModel(private val app: Application) : AndroidViewModel(app) {
     private var mProductList: MutableLiveData<List<ProductModel>> =
         MutableLiveData<List<ProductModel>>().apply { value = emptyList() }
 

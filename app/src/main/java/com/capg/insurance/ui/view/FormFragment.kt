@@ -25,7 +25,7 @@ import java.util.*
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
-class FormFragment : Fragment() , View.OnClickListener, OnDateSetListener{
+open class FormFragment : Fragment() , View.OnClickListener, OnDateSetListener{
 
     private var _binding: FragmentNewBinding? = null
 

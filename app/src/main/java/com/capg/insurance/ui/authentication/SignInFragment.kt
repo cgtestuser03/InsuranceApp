@@ -40,7 +40,8 @@ class SignInFragment : Fragment(R.layout.fragment_signin) {
                 progressBarSignin.isVisible = true
                 val email = userEmailEtv.text.toString()
                 val password = userPasswordEtv.text.toString()
-                viewModel.signInUser(email, password)
+//                viewModel.signInUser(email, password)
+                viewModel.signInValidation(email, password)
             }
 
             signUpTxt.setOnClickListener {

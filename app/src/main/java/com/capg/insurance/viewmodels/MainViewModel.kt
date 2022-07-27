@@ -5,8 +5,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.capg.insurance.data.repository.BaseAuthRepository
+import com.capg.insurance.ui.authentication.Validation
 import com.google.firebase.auth.FirebaseUser
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
@@ -14,7 +16,7 @@ import java.lang.Exception
 import javax.inject.Inject
 
 @HiltViewModel
-class MainViewModel @Inject constructor(
+open class MainViewModel @Inject constructor(
     private val repository : BaseAuthRepository
 ) : ViewModel() {
 
@@ -28,7 +30,7 @@ class MainViewModel @Inject constructor(
 
 
     //validate all fields first before performing any sign in operations
-    fun signInUser(email: String , password: String) = viewModelScope.launch{
+    fun signInUser(email: String , password: String) = GlobalScope.launch{
         when {
             email.isEmpty() -> {
                 eventsChannel.send(AllEvents.ErrorCode(1))
@@ -43,7 +45,7 @@ class MainViewModel @Inject constructor(
     }
 
     //validate all fields before performing any sign up operations
-    fun signUpUser(email : String , password: String , confirmPass : String)= viewModelScope.launch {
+    fun signUpUser(email : String , password: String , confirmPass : String)= GlobalScope.launch {
         when{
             email.isEmpty() -> {
                 eventsChannel.send(AllEvents.ErrorCode(1))
@@ -110,7 +112,7 @@ class MainViewModel @Inject constructor(
         _firebaseUser.postValue(user)
     }
 
-    fun verifySendPasswordReset(email: String){
+    /*fun verifySendPasswordReset(email: String){
         if(email.isEmpty()){
             viewModelScope.launch {
                 eventsChannel.send(AllEvents.ErrorCode(1))
@@ -134,11 +136,25 @@ class MainViewModel @Inject constructor(
             Log.d(TAG, "signInUser: ${error[1]}")
             eventsChannel.send(AllEvents.Error(error[1]))
         }
-    }
+    }*/
 
     sealed class AllEvents {
         data class Message(val message : String) : AllEvents()
         data class ErrorCode(val code : Int):AllEvents()
         data class Error(val error : String) : AllEvents()
+    }
+
+
+    //   Testing.............................
+    fun signInValidation(email: String , password: String):Boolean{
+        var result = Validation.loginValidation(email,password)
+        signInUser(email,password)
+        return result
+    }
+
+    fun signUpValidation(email: String , password: String,confirmPass : String):Boolean{
+        var result = Validation.registrationValidation(email,password,confirmPass)
+        signUpUser(email,password,confirmPass)
+        return result
     }
 }

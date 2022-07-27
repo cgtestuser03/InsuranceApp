@@ -41,7 +41,8 @@ class SignUpFragment : Fragment(R.layout.fragment_signup) {
                 val email = userEmailEtv.text.toString()
                 val password = userPasswordEtv.text.toString()
                 val confirmPass = confirmPasswordEtv.text.toString()
-                viewModel.signUpUser(email, password, confirmPass)
+//                viewModel.signUpUser(email, password, confirmPass)
+                viewModel.signUpValidation(email , password , confirmPass)
             }
 
             signInTxt.setOnClickListener {
