@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.capg.insurance.R
 import com.capg.insurance.data.model.ProductModel
 import com.capg.insurance.databinding.InsuranceListBinding
@@ -32,7 +33,7 @@ class ProductAdapter : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() 
         val prod = products[position]
         holder.binding.insuranceName.text = prod.name
         holder.binding.insuranceDescription.text = prod.desc
-//        Glide.with(holder.itemView.context).load(movie.imageUrl).into(holder.binding.imageview)
+        Glide.with(holder.itemView.context).load(prod.url).into(holder.binding.insuranceImage)
 
         holder.binding.insuranceCard.setOnClickListener(View.OnClickListener {
             Log.e("_ADAPTER", "Position : $position")

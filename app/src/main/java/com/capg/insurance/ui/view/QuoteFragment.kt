@@ -74,18 +74,6 @@ class QuoteFragment : Fragment() {
         })
     }
 
-    /*private fun setInsuranceListData(){
-        insuranceCategoryList.add(InsuranceModel(R.drawable.ic_icon_trem_insurance, "Term Life Insurance"))
-        insuranceCategoryList.add(InsuranceModel(R.drawable.ic_icon_medical_insurance, "Health Insurance"))
-        insuranceCategoryList.add(InsuranceModel(R.drawable.ic_icon_investment, "Investment Plans"))
-        insuranceCategoryList.add(InsuranceModel(R.drawable.ic_icon_retrun_preminum, "Return of Premium"))
-        insuranceCategoryList.add(InsuranceModel(R.drawable.ic_icon_child, "Child Saving Plans"))
-        insuranceCategoryList.add(InsuranceModel(R.drawable.ic_icon_car, "Car Insurance"))
-        insuranceCategoryList.add(InsuranceModel(R.drawable.ic_icon_return_guarantee, "Guaranteed Returns"))
-        insuranceCategoryList.add(InsuranceModel(R.drawable.ic_icon_tax_saving, "Tax Saving Investment"))
-        insuranceCategoryList.add(InsuranceModel(R.drawable.ic_icon_home, " Home  Insurance "))
-    }*/
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

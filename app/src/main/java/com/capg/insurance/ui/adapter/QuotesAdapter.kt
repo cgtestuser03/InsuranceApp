@@ -3,6 +3,7 @@ package com.capg.insurance.ui.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.capg.insurance.data.model.QuotesModel
 import com.capg.insurance.databinding.InsuranceDetailsListBinding
 
@@ -29,7 +30,8 @@ class QuotesAdapter : RecyclerView.Adapter<QuotesAdapter.ProductViewHolder>() {
         holder.binding.bankName.text = prod.name
         holder.binding.claimAmount.text = prod.claim
         holder.binding.priceButton.text = prod.price
-//        Glide.with(holder.itemView.context).load(movie.imageUrl).into(holder.binding.imageview)
+        holder.binding.onlineOffer.text = prod.offer
+        Glide.with(holder.itemView.context).load(prod.url).into(holder.binding.ivBankLogo)
     }
 
     override fun getItemCount(): Int {

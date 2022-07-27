@@ -14,7 +14,8 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="h_offer"><b><font color='#00BFFF'>\u20B91 Crore</font></b> life cover \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 at just <b><font color='#00BFFF'>\u20B9 490/months* </font></b></string>
-    <string name="h_onlineOffer">Buy Online And Save <b><font color='#FFA500'>7.4k</font></b></string>
+<!--    <string name="h_onlineOffer">Buy Online And Save <b><font color='#FFA500'>7.4k</font></b></string>-->
+    <string name="h_onlineOffer">Buy Online And Save </string>
 
     <string name="h_instruction">By clicking on "View free quotes", you agree to our <font color='#00BFFF'> privacy policy &amp; Terms of use </font></string>
     <string name="h_car">Car number</string>

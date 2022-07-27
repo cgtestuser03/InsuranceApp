@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.google.android.material.card.MaterialCardView
-    android:id="@+id/insurance_details"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:theme="@style/Theme.MaterialComponents.Light"
+    android:id="@+id/insurance_details"
     android:layout_width="match_parent"
     android:layout_height="80dp"
     android:layout_gravity="center"
+    android:layout_margin="8dp"
     android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.Light"
     app:cardCornerRadius="16dp"
-    app:cardElevation="8dp"
-    android:layout_margin="8dp">
+    app:cardElevation="8dp">
 
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/lay_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
@@ -22,68 +22,115 @@
 
         <ImageView
             android:id="@+id/iv_bank_logo"
-            android:layout_width="60dp"
+            android:layout_width="100dp"
             android:layout_height="60dp"
-            android:layout_margin="5dp"
-            android:src="@mipmap/ic_launcher"/>
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/ic_launcher" />
 
-        <TextView
-            android:id="@+id/onlineOffer"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/bankDetails"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="2dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="60dp"
-            android:gravity="left"
-            android:text="@string/h_onlineOffer"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            tools:ignore="NotSibling" />
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
 
-        <Button
-            android:id="@+id/priceButton"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_below="@id/onlineOffer"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="#FFA500"
-            android:drawableRight="@drawable/ic_arrow_"
-            android:text="Rs.1245 "
-            android:textSize="10sp" />
+            <TextView
+                android:id="@+id/claimAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/iv_bank_logo"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="90%"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/claimAmount"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@id/iv_bank_logo"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="90%"
-            android:textSize="12sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/bankName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Claim Settled"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/bankName"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_alignBottom="@id/claimAmount"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="-29dp"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="Claim Settled"
-            android:textSize="12sp" />
+        <LinearLayout
+            android:id="@+id/OfferDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
 
-    </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/onlineOfferPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:gravity="right"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/onlineOfferText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Buy Online And Save"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/onlineOffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="right"
+                    android:text="7.4k"
+                    android:textColor="#FFA500"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/priceButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/onlineOffer"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="#FFA500"
+                    android:drawableRight="@drawable/ic_arrow_"
+                    android:text="Rs.1245 "
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
 </com.google.android.material.card.MaterialCardView>
 
 
