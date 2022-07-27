@@ -1,4 +1,5 @@
-package com.capg.insurance.ui.view
+/*
+package com.capg.insurance.ui.authentication
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,7 +15,6 @@ import com.capg.insurance.R
 import com.capg.insurance.databinding.FragmentHomeBinding
 import com.capg.insurance.viewmodels.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -56,13 +56,15 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private fun registerObserver() {
         viewModel.currentUser.observe(viewLifecycleOwner) { user ->
             user?.let {
-                /*binding?.apply {
+                */
+/*binding?.apply {
                     welcomeTxt.text = "welcome ${it.email}"
                     signinButton.text = "sign out"
                     signinButton.setOnClickListener {
                         viewModel.signOut()
                     }
-                }*/
+                }*//*
+
                 findNavController().navigate(R.id.action_homeFragment_to_ProductFragment)
 
             } ?: binding?.apply {
@@ -79,4 +81,4 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         super.onDestroy()
         _binding = null
     }
-}
+}*/

@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/signInFragment">
 
-    <fragment
+    <!--<fragment
         android:id="@+id/homeFragment"
-        android:name="com.capg.insurance.ui.view.HomeFragment"
-        android:label="home"
+        android:name="com.capg.insurance.ui.authentication.HomeFragment"
+        android:label=""
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_signInFragment"
@@ -18,11 +18,11 @@
         <action
             android:id="@+id/action_homeFragment_to_ProductFragment"
             app:destination="@id/ProductFragment" />
-    </fragment>
+    </fragment>-->
     <fragment
         android:id="@+id/signInFragment"
         android:name="com.capg.insurance.ui.authentication.SignInFragment"
-        android:label="sign in">
+        android:label="">
         <action
             android:id="@+id/action_signInFragment_to_signUpFragment"
             app:destination="@id/signUpFragment"
@@ -30,13 +30,14 @@
             app:popUpTo="@id/signInFragment"
             app:popUpToInclusive="true" />
         <action
-            android:id="@+id/action_signInFragment_to_homeFragment2"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/signInFragment"
-            app:popUpToInclusive="true" />
-        <action
+            android:id="@+id/action_signInFragment_to_ProductFragment"
+            app:destination="@id/ProductFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/signInFragment"
+            app:popUpToInclusive="true"/>
+        <!--<action
             android:id="@+id/action_signInFragment_to_resetPasswordFragment"
-            app:destination="@id/resetPasswordFragment" />
+            app:destination="@id/resetPasswordFragment" />-->
 
     </fragment>
     <fragment
@@ -49,14 +50,14 @@
             app:enterAnim="@android:anim/slide_out_right"
             app:popUpTo="@id/signUpFragment"
             app:popUpToInclusive="true" />
-        <action
+        <!--<action
             android:id="@+id/action_signUpFragment_to_homeFragment"
             app:destination="@id/homeFragment"
             app:exitAnim="@android:anim/fade_out"
             app:popUpTo="@id/signUpFragment"
-            app:popUpToInclusive="true" />
+            app:popUpToInclusive="true" />-->
     </fragment>
-    <fragment
+    <!--<fragment
         android:id="@+id/resetPasswordFragment"
         android:name="com.capg.insurance.ui.authentication.ResetPasswordFragment"
         android:label="ResetPasswordFragment" >
@@ -65,7 +66,7 @@
             app:destination="@id/signInFragment"
             app:popUpTo="@id/resetPasswordFragment"
             app:popUpToInclusive="true" />
-    </fragment>
+    </fragment>-->
 
     <fragment
         android:id="@+id/ProductFragment"

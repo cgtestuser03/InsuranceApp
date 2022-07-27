@@ -32,6 +32,7 @@ class SignInFragment : Fragment(R.layout.fragment_signin) {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentSigninBinding.inflate(inflater , container , false)
+        getUser()
         listenToChannels()
         registerObservers()
         binding?.apply {
@@ -45,18 +46,18 @@ class SignInFragment : Fragment(R.layout.fragment_signin) {
             signUpTxt.setOnClickListener {
                 findNavController().navigate(R.id.action_signInFragment_to_signUpFragment)
             }
-
-            forgotPassTxt.setOnClickListener {
-                findNavController().navigate(R.id.action_signInFragment_to_resetPasswordFragment)
-            }
         }
         return binding?.root
+    }
+
+    private fun getUser() {
+        viewModel.getCurrentUser()
     }
 
     private fun registerObservers() {
         viewModel.currentUser.observe(viewLifecycleOwner) { user ->
             user?.let {
-                findNavController().navigate(R.id.action_signInFragment_to_homeFragment2)
+                findNavController().navigate(R.id.action_signInFragment_to_ProductFragment)
             }
         }
     }

@@ -1,3 +1,4 @@
+/*
 package com.capg.insurance.ui.authentication
 
 import android.os.Bundle
@@ -58,7 +59,6 @@ class ResetPasswordFragment : Fragment(R.layout.fragment_password_reset) {
                             }
                     }
                 }
-
             }
         }
     }
@@ -72,4 +72,4 @@ class ResetPasswordFragment : Fragment(R.layout.fragment_password_reset) {
             }
         }
     }
-}
+}*/

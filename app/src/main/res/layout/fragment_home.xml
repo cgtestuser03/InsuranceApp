@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.view.HomeFragment">
+    tools:context=".ui.authentication.HomeFragment">
 
     <TextView
         android:id="@+id/welcome_txt"
@@ -19,18 +19,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--<com.google.android.material.imageview.ShapeableImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="259dp"
+        android:layout_height="281dp"
         android:layout_margin="10dp"
         android:layout_marginStart="500dp"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="1200dp"
         android:layout_marginEnd="251dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_txt"
         app:shapeAppearanceOverlay="@style/Theme.InsuranceApp"
-        app:srcCompat="@mipmap/ic_firebase_foreground" />-->
+        app:srcCompat="@mipmap/ic_firebase_foreground" />
 
     <Button
         android:id="@+id/signin_button"

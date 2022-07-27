@@ -21,9 +21,9 @@ import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class SignUpFragment : Fragment(R.layout.fragment_signup) {
-    private val viewModel : MainViewModel by activityViewModels()
-    private var _binding : FragmentSignupBinding? = null
-    private val binding get()  = _binding
+    private val viewModel: MainViewModel by activityViewModels()
+    private var _binding: FragmentSignupBinding? = null
+    private val binding get() = _binding
     private val TAG = "SignUpFragment"
 
     override fun onCreateView(
@@ -31,26 +31,24 @@ class SignUpFragment : Fragment(R.layout.fragment_signup) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentSignupBinding.inflate(inflater , container , false)
+        _binding = FragmentSignupBinding.inflate(inflater, container, false)
 
         registerObservers()
         listenToChannels()
-                binding?.apply {
-                    signUpButton.setOnClickListener {
-                    progressBarSignup.isVisible = true
-                    val email = userEmailEtv.text.toString()
-                    val password = userPasswordEtv.text.toString()
-                        val confirmPass = confirmPasswordEtv.text.toString()
-                    viewModel.signUpUser(email , password , confirmPass)
+        binding?.apply {
+            signUpButton.setOnClickListener {
+                progressBarSignup.isVisible = true
+                val email = userEmailEtv.text.toString()
+                val password = userPasswordEtv.text.toString()
+                val confirmPass = confirmPasswordEtv.text.toString()
+                viewModel.signUpUser(email, password, confirmPass)
+            }
 
+            signInTxt.setOnClickListener {
+                findNavController().navigate(R.id.action_signUpFragment_to_signInFragment)
+            }
 
-                }
-
-                    signInTxt.setOnClickListener {
-                        findNavController().navigate(R.id.action_signUpFragment_to_signInFragment)
-                    }
-
-                }
+        }
 
         return binding?.root
     }
@@ -64,7 +62,7 @@ class SignUpFragment : Fragment(R.layout.fragment_signup) {
     private fun registerObservers() {
         viewModel.currentUser.observe(viewLifecycleOwner) { user ->
             user?.let {
-                findNavController().navigate(R.id.action_signUpFragment_to_homeFragment)
+                findNavController().navigate(R.id.action_signUpFragment_to_signInFragment)
             }
         }
     }
@@ -72,7 +70,7 @@ class SignUpFragment : Fragment(R.layout.fragment_signup) {
     private fun listenToChannels() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.allEventsFlow.collect { event ->
-                when(event){
+                when (event) {
                     is MainViewModel.AllEvents.Error -> {
                         binding?.apply {
                             errorTxt.text = event.error
@@ -90,24 +88,19 @@ class SignUpFragment : Fragment(R.layout.fragment_signup) {
                             }
 
 
-                        if(event.code == 2)
+                        if (event.code == 2)
                             binding?.apply {
                                 userPasswordEtvl.error = "password should not be empty"
                                 progressBarSignup.isInvisible = true
                             }
 
-                        if(event.code == 3)
+                        if (event.code == 3)
                             binding?.apply {
                                 confirmPasswordEtvl.error = "passwords do not match"
                                 progressBarSignup.isInvisible = true
                             }
                     }
-
-                    else ->{
-                        Log.d(TAG, "listenToChannels: No event received so far")
-                    }
                 }
-
             }
         }
     }
