@@ -178,7 +178,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/text_margin"
                     android:layout_weight="1"
-                    android:buttonTint="#FF6700"
+                    android:buttonTint="#3090C7"
                     android:tag="sex_male"
                     android:text="@string/t_male" />
 
@@ -188,7 +188,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:tag="sex_female"
-                    android:buttonTint="#FF6700"
+                    android:buttonTint="#3090C7"
                     android:text="@string/t_female" />
 
             </RadioGroup>
@@ -223,7 +223,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/text_margin"
                     android:tag="work"
-                    android:buttonTint="#FF6700"
+                    android:buttonTint="#3090C7"
                     android:text="@string/c_work" />
 
                 <CheckBox
@@ -232,7 +232,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/text_margin"
                     android:tag="smoke"
-                    android:buttonTint="#FF6700"
+                    android:buttonTint="#3090C7"
                     android:text="@string/c_smoke" />
 
                 <CheckBox
@@ -241,7 +241,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/text_margin"
                     android:tag="workout"
-                    android:buttonTint="#FF6700"
+                    android:buttonTint="#3090C7"
                     android:text="@string/c_gym" />
 
             </LinearLayout>

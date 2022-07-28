@@ -5,20 +5,6 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/signInFragment">
 
-    <!--<fragment
-        android:id="@+id/homeFragment"
-        android:name="com.capg.insurance.ui.authentication.HomeFragment"
-        android:label=""
-        tools:layout="@layout/fragment_home">
-        <action
-            android:id="@+id/action_homeFragment_to_signInFragment"
-            app:destination="@id/signInFragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/slide_out_right" />
-        <action
-            android:id="@+id/action_homeFragment_to_ProductFragment"
-            app:destination="@id/ProductFragment" />
-    </fragment>-->
     <fragment
         android:id="@+id/signInFragment"
         android:name="com.capg.insurance.ui.authentication.SignInFragment"
@@ -32,12 +18,8 @@
         <action
             android:id="@+id/action_signInFragment_to_ProductFragment"
             app:destination="@id/ProductFragment"
-            app:launchSingleTop="true"
-            app:popUpTo="@+id/signInFragment"
             app:popUpToInclusive="true"/>
-        <!--<action
-            android:id="@+id/action_signInFragment_to_resetPasswordFragment"
-            app:destination="@id/resetPasswordFragment" />-->
+
 
     </fragment>
     <fragment
@@ -50,23 +32,8 @@
             app:enterAnim="@android:anim/slide_out_right"
             app:popUpTo="@id/signUpFragment"
             app:popUpToInclusive="true" />
-        <!--<action
-            android:id="@+id/action_signUpFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:exitAnim="@android:anim/fade_out"
-            app:popUpTo="@id/signUpFragment"
-            app:popUpToInclusive="true" />-->
+
     </fragment>
-    <!--<fragment
-        android:id="@+id/resetPasswordFragment"
-        android:name="com.capg.insurance.ui.authentication.ResetPasswordFragment"
-        android:label="ResetPasswordFragment" >
-        <action
-            android:id="@+id/action_resetPasswordFragment_to_signInFragment"
-            app:destination="@id/signInFragment"
-            app:popUpTo="@id/resetPasswordFragment"
-            app:popUpToInclusive="true" />
-    </fragment>-->
 
     <fragment
         android:id="@+id/ProductFragment"
