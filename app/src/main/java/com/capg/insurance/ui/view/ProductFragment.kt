@@ -52,10 +52,15 @@ class ProductFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        (activity as MainActivity?)!!.hideUpButton()
+        setActionBar()
         setHasOptionsMenu(true)
         initializeRecyclerView()
         initializeObservers()
+    }
+
+    private fun setActionBar(){
+        (activity as MainActivity?)!!.supportActionBar!!.show()
+        (activity as MainActivity?)!!.hideUpButton()
     }
 
     private fun initializeRecyclerView() {
