@@ -13,12 +13,12 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
-    <string name="h_offer"><b><font color='#00BFFF'>\u20B91 Crore</font></b> life cover \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 at just <b><font color='#00BFFF'>\u20B9 490/months* </font></b></string>
+    <string name="h_offer"><b><font color='#EA762C'>\u20B91 Crore</font></b> life cover \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 at just <b><font color='#EA762C'>\u20B9 490/months* </font></b></string>
 <!--    <string name="h_offer"><b><font color='#EC9A59'>\u20B91 Crore</font></b> life cover \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 at just <b><font color='#EC9A59'>\u20B9 490/months* </font></b></string>-->
 <!--    <string name="h_onlineOffer">Buy Online And Save <b><font color='#FFA500'>7.4k</font></b></string>-->
     <string name="h_onlineOffer">Buy Online And Save </string>
 
-    <string name="h_instruction">By clicking on "View free quotes", you agree to our <font color='#00BFFF'> privacy policy &amp; Terms of use </font></string>
+    <string name="h_instruction">By clicking on "View free quotes", you agree to our <font color='#E56717'> privacy policy &amp; Terms of use </font></string>
     <string name="h_car">Car number</string>
     <string name="h_insurance">Term Life Insurance</string>
     <string name="h_name">Name<font color='#F08080'>*</font></string>
