@@ -16,6 +16,11 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Theme.InsuranceApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
     <style name="Theme.InsuranceApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.InsuranceApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

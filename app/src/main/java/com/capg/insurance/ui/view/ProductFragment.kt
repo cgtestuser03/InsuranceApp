@@ -2,18 +2,22 @@ package com.capg.insurance.ui.view
 
 import android.app.AlertDialog
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.capg.insurance.MainActivity
 import com.capg.insurance.R
 import com.capg.insurance.databinding.FragmentProductBinding
 import com.capg.insurance.ui.adapter.ProductAdapter
 import com.capg.insurance.viewmodels.InsuranceViewModel
+import com.capg.insurance.viewmodels.MainViewModel
 
 
 /**
@@ -21,6 +25,7 @@ import com.capg.insurance.viewmodels.InsuranceViewModel
  */
 class ProductFragment : Fragment() {
 
+    private val userViewModel: MainViewModel by activityViewModels()
     private var _binding: FragmentProductBinding? = null
     private var viewModel: InsuranceViewModel? = null
     private var mAdapter: ProductAdapter? = null
@@ -35,15 +40,20 @@ class ProductFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        getUser()
         _binding = FragmentProductBinding.inflate(inflater, container, false)
         return binding.root
 
     }
 
+    private fun getUser() {
+        userViewModel.getCurrentUser()
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        (activity as MainActivity?)!!.hideUpButton()
+        setHasOptionsMenu(true)
         initializeRecyclerView()
         initializeObservers()
     }
@@ -74,6 +84,16 @@ class ProductFragment : Fragment() {
         viewModel!!.mShowNetworkError.observe(viewLifecycleOwner, Observer {
             AlertDialog.Builder(context).setMessage(R.string.app_no_internet_msg).show()
         })
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_logout -> {
+                userViewModel.signOut()
+                requireActivity().finish()
+            }
+        }
+        return false
     }
 
     override fun onDestroyView() {

@@ -12,7 +12,8 @@
         android:theme="@style/Theme.InsuranceApp">
         <activity
             android:name="com.capg.insurance.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.InsuranceApp.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

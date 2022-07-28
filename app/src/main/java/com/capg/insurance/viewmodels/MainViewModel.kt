@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.capg.insurance.MainActivity
 import com.capg.insurance.data.repository.BaseAuthRepository
 import com.capg.insurance.ui.authentication.Validation
 import com.google.firebase.auth.FirebaseUser
