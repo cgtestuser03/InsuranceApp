@@ -27,7 +27,7 @@ class SignUpPageTest {
         val signUp = onView(
             allOf(
                 withId(R.id.sign_up_txt), withText("Sign up here"),
-                withParent(withParent(withId(R.id.nav_host_fragment))),
+                withParent(withParent(withId(R.id.nav_host_fragment_content_main))),
                 isDisplayed()
             )
         )
