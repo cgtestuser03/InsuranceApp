@@ -2,12 +2,10 @@ package com.capg.insurance.ui.view
 
 import android.app.AlertDialog
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.OnBackPressedCallback
-import androidx.activity.addCallback
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -16,6 +14,7 @@ import com.capg.insurance.R
 import com.capg.insurance.databinding.FragmentProductBinding
 import com.capg.insurance.ui.adapter.ProductAdapter
 import com.capg.insurance.viewmodels.InsuranceViewModel
+
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
@@ -30,14 +29,6 @@ class ProductFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this).get(InsuranceViewModel::class.java)
-
-        val callback: OnBackPressedCallback =
-            object : OnBackPressedCallback(true /* enabled by default */) {
-                override fun handleOnBackPressed() {
-                    Log.e("dfgdfd", "dfgdfgdfgd")
-                }
-            }
-        requireActivity().onBackPressedDispatcher.addCallback(this, callback)
     }
 
     override fun onCreateView(

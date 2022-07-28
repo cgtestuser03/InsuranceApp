@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F0F0F0"
     android:id="@+id/layoutSignInParent"
     tools:context="ui.authentication.SignInFragment">
 
@@ -91,6 +90,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:text="Sign in"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_password_etvl" />

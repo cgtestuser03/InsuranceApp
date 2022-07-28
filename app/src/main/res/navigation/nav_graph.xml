@@ -17,9 +17,7 @@
             app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_signInFragment_to_ProductFragment"
-            app:destination="@id/ProductFragment"
-            app:popUpToInclusive="true"/>
-
+            app:destination="@id/ProductFragment"/>
 
     </fragment>
     <fragment

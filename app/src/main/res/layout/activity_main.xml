@@ -9,14 +9,17 @@
     <!--<com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.InsuranceApp.AppBarOverlay">
+        android:theme="@style/Theme.InsuranceApp.AppBarOverlay"
+        tools:ignore="MissingConstraints">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorOnBackground"
-        app:popupTheme="@style/Theme.InsuranceApp.PopupOverlay" />-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorOnBackground"
+            app:popupTheme="@style/Theme.InsuranceApp.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>-->
 
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
