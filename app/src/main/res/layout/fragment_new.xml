@@ -30,15 +30,15 @@
             <TextView
                 android:id="@+id/edit_insurance"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_margin="@dimen/text_margin"
                 android:layout_weight="1"
                 android:autofillHints=""
                 android:ems="10"
-                android:textStyle="bold"
-                android:textColor="#E56717"
                 android:text="@string/h_insurance"
-                android:textSize="14sp" />
+                android:textColor="#E56717"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/edit_Offer"
@@ -48,7 +48,7 @@
                 android:layout_weight="1"
                 android:autofillHints=""
                 android:text="@string/h_offer"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
         </LinearLayout>
 
         <LinearLayout

@@ -13,7 +13,8 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
-    <string name="h_offer"><b><font color='#EA762C'>\u20B91 Crore</font></b> life cover \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 at just <b><font color='#EA762C'>\u20B9 490/months* </font></b></string>
+<!--    <string name="h_offer"><b><font color='#409cd1'>\u20B91 Crore</font></b> life cover at just <b><font color='#409cd1'>\u20B9 490/months* </font></b></string>-->
+    <string name="h_offer"><b><font color='#409cd1'>\u20B91 Crore</font></b> life cover \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 at just <b><font color='#409cd1'>\u20B9 490/months* </font></b></string>
 <!--    <string name="h_offer"><b><font color='#EC9A59'>\u20B91 Crore</font></b> life cover \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 at just <b><font color='#EC9A59'>\u20B9 490/months* </font></b></string>-->
 <!--    <string name="h_onlineOffer">Buy Online And Save <b><font color='#FFA500'>7.4k</font></b></string>-->
     <string name="h_onlineOffer">Buy Online And Save </string>

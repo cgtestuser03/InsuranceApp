@@ -123,7 +123,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-                    android:backgroundTint="#FF6700"
+                    android:backgroundTint="#3090c7"
                     android:drawableRight="@drawable/ic_arrow_"
                     android:text="Rs.1245 "
                     android:textSize="10sp" />
